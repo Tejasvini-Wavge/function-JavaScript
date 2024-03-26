@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h2>Functions</h2>
+    <p>
+        Functions <br> 
+        Two types of Functions <br>
+        <ul>
+            <li>System Defined</li>
+            <li>User Defined</li>
+        </ul>
+        Syntax : <br>
+        function function-name(arguments) <br>
+        { <br>
+
+            //function body <br>
+
+        } <br>
+    </p>
+
+
+        <script>
+            console.log("Functions!!!");
+
+            console.log("No Arugment No Return");
+            
+            console.log("Circle")
+            function areaCricle() {
+                const radius = prompt("Enter radius of circle : ");
+                const area = 3.14 * radius * radius;
+                console.log(`Area of circle = ${area}`);
+            }
+            areaCricle();
+
+            console.log("Argument with No Return");
+            console.log("Addition of Two Numbers");
+            function add(a,b) {
+                const c = parseInt(a) + parseInt(b);
+
+                console.log(`Addition of ${a} and ${b} is ${c}.`);
+            }
+
+            a = prompt("Enter first number : ");
+            b = prompt("Enter second number : ");
+            add(a,b);
+
+            console.log("No Argument but Return");
+            console.log("Calculate Simple Interest");
+            function simpleInterest() {
+                const time = 2;
+                const principle = prompt("Enter Amount :");
+                const rate = prompt("Enter Rate : ");
+
+                const interest = parseFloat((principle*rate*time)/100);
+                return interest;
+            }
+
+            const amt = simpleInterest();
+            console.log(`Simple Interest = ${amt}`);
+
+            console.log("Argument and Return");
+            console.log("Calculate Volume of Circle");
+            function volumeCricle(r,pi=3.14) {
+                vol = pi * r * r * r;
+                return vol;
+            }
+            const radius = prompt("Enter radius of cirlce : ");
+            const volume = volumeCricle(radius);
+            console.log(`Volume of Cirlce is ${volume}`);
+
+        </script>
+</body>
+</html>
